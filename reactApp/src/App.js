@@ -33,12 +33,10 @@ class App extends Component {
   }
 
   deleteProduct = id => {
-    // <-- declare id parameter
     axios
-      .delete(`http://localhost:5000/delete/${id}`) // <-- remove ;
+      .delete(`http://localhost:5000/products/${id}`)
       .then(() => {
-        // Issue GET request after item deleted to get updated list
-        // that excludes note of id
+
         this.getAllProducts()
       })
       .then(res => {

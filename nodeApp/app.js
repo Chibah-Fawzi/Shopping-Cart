@@ -48,7 +48,7 @@ app.delete('/products/:id', (req, res) => {
 
     connection.query('DELETE FROM products WHERE id = ?', [req.params.id], (err, rows, fields) => {
         if (!err)
-            res.send('Product deleted successfully.');
+            console.log('Product deleted successfully.');
         else
             console.log(err);
     })
