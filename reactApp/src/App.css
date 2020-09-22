@@ -1,0 +1,121 @@
+* {
+  margin: 0.4rem;
+}
+.App {
+  padding: 30px;
+  text-align: center;
+  background-color:#F1ECEC;
+  margin: auto;
+  margin-top: 4vh;
+  align-content: center;
+  width: 700px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+/* GENERAL */
+
+h1 {
+  margin-bottom: 5vh;
+}
+
+p {
+  margin-top: 20px;
+}
+
+hr {
+  margin: 5vh;
+}
+.add {
+  margin-top: 3vh;
+}
+
+/* TABLE */
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.delete {
+  margin-right: 10px;
+  margin-top: -20px;
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+
+.delete:hover {
+  color: #404040 !important;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+
+}
+
+/* INPUTS */
+
+input, button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  }
+
+input {
+  height: 30px;
+  width: 300px;
+  padding-left: 10px;
+}
+
+.btn {
+border: none;
+background: #404040;
+color: #ffffff !important;
+font-weight: 100;
+padding: 20px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+  color: #404040 !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
